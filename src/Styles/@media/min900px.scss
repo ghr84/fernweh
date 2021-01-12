@@ -1,0 +1,120 @@
+@media only screen and (min-width: 900px) {
+  // Privacy
+
+  .privacy-page-wrapper {
+    margin: 13rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .privacy-intro {
+      display: grid;
+      position: relative;
+      grid-template-columns: [col-1] 415px [col-2] 380px;
+      justify-content: center;
+      margin: 0 0 11rem 0;
+      .col-1 {
+        grid-column: col-1;
+      }
+      .col-2 {
+        margin: 3.22rem 0 0 0;
+        grid-column: col-2;
+      }
+      .bottom-border {
+        position: absolute;
+        bottom: -71px;
+        width: 26%;
+        right: 39%;
+        height: 1px;
+        background-color: #8a8e8e;
+      }
+    }
+    .privacy-content {
+      grid-column: txt;
+      .part-one,
+      .part-two,
+      .part-three,
+      .part-four,
+      .part-five,
+      .part-six,
+      .part-seven,
+      .part-eight,
+      .part-nine,
+      .part-ten,
+      .part-eleven,
+      .part-twelve {
+        display: grid;
+        grid-template-columns: [col-1] 415px [col-2] 380px;
+        // grid-template-columns: [col-1] 405px [col-2] 380px;
+        justify-content: center;
+        position: relative;
+        margin: 0 0 11rem 0;
+        .col-1 {
+          grid-column: col-1;
+          .p-btm-margin-desktop {
+            margin-bottom: 0;
+          }
+        }
+        .col-2 {
+          grid-column: col-2;
+          .p-btm-margin-desktop {
+            margin-bottom: 0;
+          }
+        }
+        .bottom-border {
+          position: absolute;
+          bottom: -71px;
+          width: 26%;
+          right: 39%;
+          height: 1px;
+          background-color: #8a8e8e;
+        }
+      }
+      .part-one {
+        position: relative;
+        margin: 0 0 11rem 0;
+        .bottom-border {
+          position: absolute;
+          bottom: -71px;
+          width: 26%;
+          right: 39%;
+          height: 1px;
+          background-color: #8a8e8e;
+        }
+      }
+      .part-two,
+      .part-three,
+      .part-six,
+      .part-seven,
+      .part-eight,
+      .part-nine {
+        .col-2,
+        .col-1 {
+          .p-top-margin {
+            margin-top: 7.5rem;
+          }
+          .p-top-margin-two {
+            margin-top: 9.8rem;
+          }
+          .p-top-margin-three {
+            margin-top: 5.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  // Imprint
+
+  #imprint-wrapper {
+    display: grid;
+    grid-template-columns: auto [contentBox] 350px auto;
+  }
+
+  // Copyright
+
+  #copyright-wrapper {
+    display: grid;
+    grid-template-columns: auto [contentBox] 450px auto;
+    margin: 11rem 0 8rem 0;
+  }
+}

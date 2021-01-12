@@ -1,0 +1,58 @@
+// Fernweh navigation
+
+#fernweh-page {
+  .fernweh-nav {
+    max-width: 376px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 1rem;
+    .nav-links {
+      text-decoration: inherit;
+      color: inherit;
+      cursor: pointer;
+      .underScore {
+        width: 0;
+      }
+      &.abenteuer-active {
+        .underScore {
+          width: 93%;
+          background-color: $green;
+          height: 1.5px;
+          margin: 3px auto 0 auto;
+          transition: ease-in-out width 0.3s;
+        }
+      }
+      &.kultur-active {
+        .underScore {
+          width: 93%;
+          background-color: $pelorous;
+          height: 1.5px;
+          margin: 3px auto 0 auto;
+          transition: ease-in-out width 0.3s;
+        }
+      }
+      &.mal-anders-active {
+        .underScore {
+          width: 93%;
+          background-color: $brown;
+          height: 1.5px;
+          margin: 3px auto 0 auto;
+          transition: ease-in-out width 0.3s;
+        }
+      }
+      &.zusammen-active {
+        .underScore {
+          width: 93%;
+          background-color: $purple;
+          height: 1.5px;
+          margin: 3px auto 0 auto;
+          transition: ease-in-out width 0.3s;
+        }
+      }
+    }
+    .right-carousel-arrow {
+      transform: rotate(180deg);
+    }
+  }
+}

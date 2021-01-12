@@ -1,0 +1,52 @@
+// Utilities
+
+@import "./Utilities/Varibles.scss";
+@import "./Utilities/Fontstack.scss";
+@import "./Utilities/Typobase.scss";
+@import "./Utilities/Mixins.scss";
+
+.body-overflowY-hidden {
+  overflow-y: hidden;
+}
+body {
+  font-family: "roboto-condensed-regular", "Arial Narrow", Helvetica, sans-serif;
+  color: $primary-black;
+
+  @import "./Constants/BurgerMenu.scss";
+  @import "./Constants/Header.scss";
+  @import "./Constants/FernwehNav.scss";
+  @import "./Constants/BackUpBtn.scss";
+
+  // @media
+
+  ////Home / Media stand alone / Theorie stand alone / Imprint / Copyright / Privacy
+
+  @import "./@media/max400px.scss";
+  @import "./@media/min400px.scss";
+  @import "./@media/min500px.scss";
+  @import "./@media/min571px.scss";
+  @import "./@media/min600px.scss";
+  @import "./@media/min675px.scss";
+  @import "./@media/min750px.scss";
+  @import "./@media/min900px.scss";
+  @import "./@media/min1000px.scss";
+  @import "./@media/min1100px.scss";
+  @import "./@media/min1150px.scss";
+  @import "./@media/min1200px.scss";
+  @import "./@media/min1250px.scss";
+  @import "./@media/min1300px.scss";
+  @import "./@media/min1400px.scss";
+
+  //// Fernweh stories page
+
+  @import "./@media/Fernweh-Page/FernMax400px.scss";
+  @import "./@media/Fernweh-Page/FernMin400px.scss";
+  @import "./@media/Fernweh-Page/FernMin571px.scss";
+  @import "./@media/Fernweh-Page/FernMin740px.scss";
+  @import "./@media/Fernweh-Page/FernMin800px.scss";
+  @import "./@media/Fernweh-Page/FernMin1000px.scss";
+  @import "./@media/Fernweh-Page/FernMin1100px.scss";
+  @import "./@media/Fernweh-Page/FernMin1200px.scss";
+  @import "./@media/Fernweh-Page/FernMin1300px.scss";
+  @import "./@media/Fernweh-Page/FernMin1400px.scss";
+}

@@ -1,0 +1,170 @@
+// Burger menu open
+// Toggle between two classes to transition menu.
+
+.burger-menu-wrapper {
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 5;
+  .burger-backdrop-open {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.442);
+  }
+  .burger-menu-open {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 6;
+    box-shadow: -5px 0px 40px rgba(0, 0, 0, 0.242);
+    transition: ease-in-out width 0.5s;
+    .lang-closeBtn-box {
+      height: 11%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 0 0.8rem 0 1.3rem;
+      .lang-btn-box {
+        font-size: 1.35rem;
+        width: 100%;
+        opacity: 1;
+        transition: ease-in-out opacity 1.15s;
+        cursor: pointer;
+        .german-switch-active {
+          display: none;
+        }
+        .french-switch-active {
+          display: none;
+        }
+        .german-switch-unactive {
+          font-size: normal;
+        }
+        .french-switch-unactive {
+          font-size: normal;
+        }
+      }
+      .close-icon {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 28px;
+        width: 28px;
+        opacity: 1;
+        transition: ease-in-out opacity 1.2s;
+        .icon-1 {
+          height: 26px;
+          width: 3px;
+          background-color: $black;
+          transform: rotate(45deg);
+          margin-right: -3px;
+        }
+        .icon-2 {
+          height: 26px;
+          width: 3px;
+          background-color: $black;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    .menu-items {
+      height: 92%;
+      width: 125px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 4rem 0 8rem 0;
+      opacity: 1;
+      transition: ease-in-out opacity 1.15s;
+      .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 32px;
+        width: 142px;
+        cursor: pointer;
+        font-size: 22px;
+        font-weight: 200;
+        color: $black;
+        margin: 1rem 0;
+        text-decoration: none;
+
+        // Add an active class to labels when section is in sight
+        // About us
+
+        .burger-about-active {
+          color: $pelorous;
+          font-weight: bold;
+        }
+        // Fernweh
+
+        .burger-fernweh-active {
+          color: $orange;
+          font-weight: bold;
+        }
+
+        // Reasons
+
+        .burger-reasons-active {
+          color: $brown;
+          font-weight: bold;
+        }
+
+        // Theorie
+
+        .burger-theorie-active {
+          color: #2a6f77;
+          font-weight: bold;
+        }
+
+        // Media
+
+        .burger-media-active {
+          color: $black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+// Burger menu closed
+
+.burger-menu-wrapper-closed {
+  z-index: -100;
+  height: 0;
+  width: 0;
+  .burger-menu-closed {
+    height: 0;
+    width: 0;
+    .lang-closeBtn-box {
+      .lang-btn-box-closed {
+        font-size: 1.35rem;
+        width: 100%;
+        opacity: 0;
+      }
+      .close-icon {
+        height: 0;
+        width: 0;
+        opacity: 0;
+      }
+    }
+    .menu-items {
+      height: 0;
+      opacity: 0;
+    }
+  }
+}

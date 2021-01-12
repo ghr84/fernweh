@@ -1,0 +1,254 @@
+// Header styles
+
+#header {
+  @include flex-dir-jstCnt-algnItms(row, space-between, center);
+  z-index: 4;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: white;
+  padding: 0.7rem;
+  transition: top 0.5s;
+
+  .logo {
+    @include height-width(3.5rem, 3.5rem);
+    cursor: pointer;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+
+  #mobile-nav {
+    #burger-menu-icon {
+      @include flex-dir-jstCnt-algnItms(column, space-between, null);
+      height: 0.7rem;
+      cursor: pointer;
+      .burger-div {
+        @include height-width(3px, 28px);
+        border-radius: 2px;
+        background-color: $primary-black;
+      }
+    }
+  }
+
+  #desktop-nav {
+    @include flex-dir-jstCnt-algnItms(row, space-between, null);
+    display: none;
+    height: 1.5rem;
+
+    // Show and hide language switches
+
+    .german-switch-active {
+      display: none;
+    }
+    .french-switch-active {
+      display: none;
+    }
+    .german-switch-unactive {
+      display: block;
+      cursor: pointer;
+    }
+    .french-switch-unactive {
+      display: block;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      text-decoration: inherit;
+      color: inherit;
+      margin-right: 1.5rem;
+
+      cursor: pointer;
+      .underScore {
+        width: 0;
+      }
+
+      // Add active/unactive classes for each language to render underscore smoothly
+
+      //About Us
+      //DE
+
+      .aboutUs-german-underScore-active {
+        width: 42px;
+        background-color: $pelorous;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+      .aboutUs-german-underScore-unactive {
+        width: 0px;
+        background-color: $pelorous;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in width 0.3s;
+      }
+
+      //FR
+
+      .aboutUs-french-underScore-active {
+        width: 95%;
+        background-color: $pelorous;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+      .aboutUs-french-underScore-unactive {
+        width: 0px;
+        background-color: $pelorous;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in width 0.3s;
+      }
+
+      //Fernweh
+      //DE
+
+      .fernweh-german-underScore-active {
+        width: 59px;
+        background-color: $orange;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+
+      .fernweh-german-underScore-unactive {
+        width: 0px;
+        background-color: $orange;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in width 0.3s;
+      }
+
+      // FR
+
+      .fernweh-french-underScore-active {
+        width: 140px;
+        background-color: $orange;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+
+      .fernweh-french-underScore-unactive {
+        width: 0px;
+        background-color: $orange;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in width 0.3s;
+      }
+
+      //Reasons
+      //DE
+
+      .reasons-german-underScore-active {
+        width: 63px;
+        background-color: $brown;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+
+      .reasons-german-underScore-unactive {
+        width: 0px;
+        background-color: $brown;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+
+      //FR
+
+      .reasons-french-underScore-active {
+        width: 72px;
+        background-color: $brown;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+
+      .reasons-french-underScore-unactive {
+        width: 0px;
+        background-color: $brown;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+
+      //Theorie
+      //DE
+
+      .theorie-german-underScore-active {
+        width: 50px;
+        background-color: $dark-green;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+
+      .theorie-german-underScore-unactive {
+        width: 0px;
+        background-color: $dark-green;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+
+      //FR
+
+      .theorie-french-underScore-active {
+        width: 53px;
+        background-color: $dark-green;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+
+      .theorie-french-underScore-unactive {
+        width: 0px;
+        background-color: $dark-green;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+
+      //Media
+      //DE
+
+      .media-german-underScore-active {
+        width: 42px;
+        background-color: $black;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+
+      .media-german-underScore-unactive {
+        width: 0px;
+        background-color: $black;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+
+      //FR
+
+      .media-french-underScore-active {
+        width: 40px;
+        background-color: $black;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+
+      .media-french-underScore-unactive {
+        width: 0px;
+        background-color: $black;
+        height: 1.9px;
+        margin: 3px auto 0 auto;
+        transition: ease-in-out width 0.3s;
+      }
+    }
+  }
+}

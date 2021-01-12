@@ -1,0 +1,580 @@
+#fernweh-page {
+  .fernweh-nav {
+    margin: 2rem 1rem;
+  }
+  .fernweh-story {
+    .fernweh-intro {
+      .fernweh-intro-img-zusammen {
+        background-image: url("../../../Assets/Images/pictures Sandrine/sandrine-banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 16rem;
+      }
+      .fernweh-intro-img-abenteuer {
+        background-image: url("../../../Assets/Images/pictures Julia/panorama1_angesetzt.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 16rem;
+      }
+      .fernweh-intro-img-kultur {
+        background-image: url("../../../Assets/Images/pictures Adriana/4xKultur-banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 16rem;
+      }
+      .fernweh-intro-img-malAnders {
+        background-image: url("../../../Assets/Images/pictures Jessica/jessica-banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 16rem;
+      }
+      .fernweh-text-box {
+        display: grid;
+        grid-template-columns: 1rem [txt] auto 1rem;
+        margin: 1.8rem 0rem;
+        .h4 {
+          grid-column: txt;
+        }
+        .h1 {
+          grid-column: txt;
+        }
+        .p-main {
+          grid-column: txt;
+          font-family: "roboto-condensed-bold";
+        }
+      }
+    }
+    .fernweh-main {
+      .fernweh-story-content {
+        margin: 0;
+        .text-img-box,
+        .text-img-box-two {
+          .abenteuer-text-box,
+          .fernweh-text-box {
+            display: grid;
+            grid-template-columns: 1rem [txt] auto 1rem;
+            margin: 0;
+            .h4,
+            .h1,
+            .p-main {
+              grid-column: txt;
+            }
+          }
+          .image-container {
+            margin: 2rem 0;
+            .zusammen-img-tukTuk {
+              background-image: url("../../../Assets/Images/pictures Sandrine/BILDRECHTE-YlBR_Triporteurs Yverdon-les-Bains-5(c)YLBR_bearb.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              width: 100%;
+              height: 16rem;
+            }
+            .abenteuer-img-joga {
+              background-image: url("../../../Assets/Images/pictures Julia/joga1.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              width: 100%;
+              height: 16rem;
+            }
+            .abenteuer-img-landMark {
+              background-image: url("../../../Assets/Images/pictures Julia/julia-banner.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              width: 100%;
+              height: 16rem;
+            }
+            .abenteuer-img-bridge {
+              display: none;
+            }
+            .kultur-img-fridayBanner {
+              background-image: url("../../../Assets/Images/pictures Adriana/IMG_0783_bearb.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              width: 100%;
+              height: 16rem;
+            }
+            .kultur-img-saturdayBanner {
+              background-image: url("../../../Assets/Images/pictures Adriana/IMG_0793_bearb.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              width: 100%;
+              height: 16rem;
+            }
+            .kultur-img-winterthurBanner {
+              display: none;
+            }
+            .malAnders-img-woodHouse {
+              background-image: url("../../../Assets/Images/pictures Jessica/BILDRECHTE-bedandbox.ch-Roulotte_bearb copy.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              width: 100%;
+              height: 16rem;
+            }
+            .malAnders-img-river {
+              display: none;
+            }
+            .malAnders-img-text-box,
+            .abenteuer-img-text-box,
+            .img-text-box {
+              display: grid;
+              grid-template-columns: 1rem [txt] auto 1rem;
+              margin: -4px 0 0 0;
+              padding: 1rem 0;
+              background-color: $purple;
+              color: white;
+              line-height: 0;
+              .p-scndry {
+                grid-column: txt;
+                margin: 0;
+              }
+            }
+          }
+        }
+        .text-img-box-two {
+          margin: 0;
+          .fernweh-text-box {
+            display: grid;
+            grid-template-columns: 1rem [txt] auto 1rem;
+            .h4,
+            .h1,
+            .p-main {
+              grid-column: txt;
+            }
+          }
+          .image-container {
+            margin: 2rem 0;
+            .zusammen-img-kid {
+              background-image: url("../../../Assets/Images/pictures Sandrine/DSC_0246_bearb.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              width: 100%;
+              height: 24rem;
+            }
+            .malAnders-img-tent {
+              background-image: url("../../../Assets/Images/pictures Jessica/BILDRECHTE-453E54E2A69841BD9E497EECF1E59900_bearb copy.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              width: 100%;
+              height: 16rem;
+            }
+            .kultur-img-text-box,
+            .img-text-box {
+              display: grid;
+              grid-template-columns: 1rem [txt] auto 1rem;
+              margin: -4px 0 0 0;
+              padding: 1rem 0;
+              background-color: $purple;
+              color: white;
+              line-height: 0;
+              .p-scndry {
+                grid-column: txt;
+                margin: 0;
+              }
+            }
+          }
+          .fernweh-text-box-two {
+            display: grid;
+            grid-template-columns: 1rem [txt] auto 1rem;
+            margin: 0;
+            .h4,
+            .h1,
+            .p-main {
+              grid-column: txt;
+            }
+          }
+          .zusammen-text-desktop {
+            display: none;
+          }
+        }
+      }
+      .co2-info-box {
+        display: grid;
+        grid-template-columns: 1rem [txt] auto 1rem;
+        padding: 2rem 0 3.5rem 0;
+        margin: 2rem 0 0 0;
+        .fernweh-stories-source-box {
+          border-top: 0.8px solid white;
+          padding: 1rem 0 0 0;
+          grid-column: txt;
+          margin: 3rem 0 0 0;
+          .source-links,
+          .source-txt {
+            font-size: 12px;
+            text-decoration: none;
+            color: white;
+          }
+        }
+        .h4,
+        .h1,
+        .p-main {
+          grid-column: txt;
+        }
+        .fernweh-email {
+          text-decoration: none;
+          color: inherit;
+        }
+        .h4 {
+          .source-asterik {
+            font-size: 18px;
+            margin-left: 3px;
+            vertical-align: text-top;
+          }
+        }
+      }
+      .travel-tips-wrapper {
+        background-color: $purple;
+        .travel-tips-intro {
+          display: flex;
+          flex-direction: column;
+
+          .travel-banner-abenteuer {
+            background-image: url("../../../Assets/Images/pictures Julia/panorama1_angesetzt.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 17.7rem;
+            margin: -16px 0;
+            padding: 1rem;
+            .abenteuer-travel-banner-text-box {
+              max-width: 12rem;
+              max-height: 144px;
+              padding: 1rem;
+              background-color: rgba(34, 34, 34, 0.7);
+            }
+          }
+
+          .travel-banner-kultur {
+            background-image: url("../../../Assets/Images/pictures Adriana/4xKultur-banner.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 17.7rem;
+            margin: -16px 0;
+            padding: 1rem;
+            .travel-banner-text-box {
+              max-width: 12rem;
+              max-height: 115px;
+              padding: 1rem;
+              background-color: rgba(34, 34, 34, 0.7);
+            }
+          }
+
+          .travel-banner-malAnders {
+            background-image: url("../../../Assets/Images/pictures Jessica/jessica-banner.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 17.7rem;
+            margin: -16px 0;
+            padding: 1rem;
+            .malAnders-travel-banner-text-box {
+              max-width: 12rem;
+              max-height: 140px;
+              padding: 1rem;
+              background-color: rgba(34, 34, 34, 0.7);
+            }
+          }
+
+          .travel-banner-zusammen {
+            background-image: url("../../../Assets/Images/pictures Sandrine/BILDRECHTE-YlBR Yverdon Grande Cariçaie Champ Pittet hiver ©Sandro Gusberti_bearb.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 17.7rem;
+            margin: -16px 0;
+            padding: 1rem;
+
+            .travel-banner-text-box {
+              max-width: 12rem;
+              padding: 1rem;
+              background-color: rgba(34, 34, 34, 0.7);
+            }
+          }
+          .travel-map {
+            img {
+              width: 100%;
+              height: 0%;
+              background-repeat: no-repeat;
+              background-size: contain;
+              margin: -2px 0;
+            }
+          }
+        }
+
+        .travel-info {
+          .fernweh-image-container {
+            .fernweh-banner {
+              width: 100%;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+            .img-text-box {
+              margin: -4px 0 0 0;
+              padding: 0.5rem 1rem;
+              background-color: $purple;
+              color: white;
+              line-height: 0;
+            }
+            .fernweh-text-box {
+              margin: 1.2rem 1rem;
+              .h4 {
+                margin: 0 0 0.18rem 0;
+              }
+            }
+          }
+
+          .activity-section {
+            padding: 2rem 0 1rem 1rem;
+            .activity-label-box {
+              display: inline;
+              padding: 0.8rem 0.5rem 0.6rem 0.5rem;
+              background-color: white;
+              color: $purple;
+            }
+            .travel-info-cards-container {
+              .BrainhubCarousel__container {
+                margin: 2rem 0 2.5rem 0;
+                .BrainhubCarousel {
+                  li {
+                    justify-content: flex-start;
+                  }
+                  .BrainhubCarousel__customArrows,
+                  .BrainhubCarousel__custom-arrowLeft {
+                    cursor: pointer;
+                  }
+                  .BrainhubCarousel__custom-arrowRight {
+                    cursor: pointer;
+                    transform: rotate(180deg);
+                  }
+                }
+              }
+              .travel-info-card {
+                color: white;
+                max-width: 300px;
+                .h3-regular-bold {
+                  margin: 1rem 0 0.3rem 0;
+                }
+                .p-main {
+                  margin: 0.5rem 0 1rem 0;
+                  color: white;
+                  .fernweh-link {
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: inherit;
+                  }
+                }
+                .url-box {
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  margin-left: -3px;
+                  a {
+                    color: $pelorous;
+                    font-size: 1.2rem;
+                    text-decoration: none;
+                  }
+                  .url-icon {
+                    background-repeat: no-repeat;
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    background-size: contain;
+                    margin: 0 0.2rem 0 0;
+                  }
+                }
+                .travel-card-divider {
+                  background-color: white;
+                  width: 2.5rem;
+                  height: 1px;
+                }
+              }
+              .stand-alone-card {
+                margin: 3rem 0 6.5rem 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Fernweh  -  Stories
+
+// #fernweh-page {
+//   .fernweh-story {
+//     .fernweh-banner {
+//       width: 100%;
+//       background-repeat: no-repeat;
+//       background-size: contain;
+//     }
+//     .fernweh-intro {
+//       margin: 0 0 2.5rem 0;
+
+//       .fernweh-banner {
+//         width: 100%;
+//         background-repeat: no-repeat;
+//         background-size: contain;
+//       }
+//       .fernweh-text-box {
+//         margin: 1.2rem 1rem;
+//         .p-main {
+//           font-weight: 600;
+//           font-size: 1.1rem;
+//         }
+//         .h4 {
+//           margin: 0 0 0.18rem 0;
+//         }
+//       }
+//     }
+//     .fernweh-main {
+//       .fernweh-story-content {
+//         margin: 0 0 2.5rem 0;
+//         .fernweh-banner {
+//           width: 100%;
+//           background-repeat: no-repeat;
+//           background-size: contain;
+//         }
+//         .img-text-box {
+//           margin: -4px 0 0 0;
+//           padding: 0.5rem 1rem;
+//           background-color: $purple;
+//           color: white;
+//           line-height: 0;
+//         }
+//         .fernweh-text-box {
+//           margin: 1.2rem 1rem;
+//           .h4 {
+//             margin: 0 0 0.18rem 0;
+//           }
+//         }
+//       }
+//       .co2-info-box {
+//         margin: 0;
+//         padding: 2rem 1rem 3.5rem 1rem;
+//         background-color: $pelorous;
+//       }
+//       .travel-tips {
+//         background-color: $purple;
+//         .travel-banner {
+//           height: 17.7rem;
+//           background-size: cover;
+//           background-repeat: no-repeat;
+//           margin: -16px 0;
+//           padding: 2rem;
+
+//           .travel-banner-text-box {
+//             max-width: 12rem;
+//             max-height: 115px;
+//             padding: 1rem;
+//             background-color: rgba(34, 34, 34, 0.7);
+//           }
+//         }
+//         .travel-map {
+// width: 100%;
+// background-repeat: no-repeat;
+// background-size: contain;
+// margin: -2px 0;
+//         }
+//         .travel-info {
+//           .fernweh-image-container {
+//             .fernweh-banner {
+//               width: 100%;
+//               background-repeat: no-repeat;
+//               background-size: contain;
+//             }
+//             .img-text-box {
+//               margin: -4px 0 0 0;
+//               padding: 0.5rem 1rem;
+//               background-color: $purple;
+//               color: white;
+//               line-height: 0;
+//             }
+//             .fernweh-text-box {
+//               margin: 1.2rem 1rem;
+//               .h4 {
+//                 margin: 0 0 0.18rem 0;
+//               }
+//             }
+//           }
+
+//           .activity-section {
+//             padding: 2rem 0 1rem 1rem;
+//             .activity-label-box {
+//               display: inline;
+//               padding: 0.8rem 0.5rem 0.6rem 0.5rem;
+//               background-color: white;
+//               color: $purple;
+//             }
+//             .travel-info-cards-container {
+//               .BrainhubCarousel__container {
+//                 margin: 2rem 0 2.5rem 0;
+//                 cursor: pointer;
+//                 .BrainhubCarousel {
+//                   li {
+//                     justify-content: flex-start;
+//                   }
+//                   .BrainhubCarousel__custom-arrowRight {
+//                     transform: rotate(180deg);
+//                   }
+//                 }
+//               }
+//               .travel-info-card {
+//                 color: white;
+//                 max-width: 300px;
+//                 .h3-regular-bold {
+//                   margin: 1rem 0 0.3rem 0;
+//                 }
+//                 .p-main {
+//                   margin: 0.5rem 0 1rem 0;
+//                   color: white;
+//                 }
+//                 .url-box {
+//                   display: flex;
+//                   flex-direction: row;
+//                   align-items: center;
+//                   margin-left: -3px;
+//                   a {
+//                     color: $pelorous;
+//                     font-size: 1.2rem;
+//                     text-decoration: none;
+//                   }
+//                   .url-icon {
+//                     background-repeat: no-repeat;
+//                     height: 1.5rem;
+//                     width: 1.5rem;
+//                     background-size: contain;
+//                     margin: 0 0.2rem 0 0;
+//                   }
+//                 }
+//                 .travel-card-divider {
+//                   background-color: white;
+//                   width: 2.5rem;
+//                   height: 1px;
+//                 }
+//               }
+//               .stand-alone-card {
+//                 margin: 3rem 0 6.5rem 0;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

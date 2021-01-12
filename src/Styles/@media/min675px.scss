@@ -1,0 +1,142 @@
+@media only screen and (min-width: 675px) {
+  #about-us-section {
+    #brochure-badge-wrapper {
+      a {
+        #brochure-badge {
+          right: 40px;
+          top: 104px;
+          height: 130px;
+          width: 130px;
+          transition: box-shadow ease-in-out 0.7s;
+          -webkit-transition: box-shadow ease-in-out 0.7s;
+          .text-container {
+            .p-main {
+              font-size: 1rem;
+              margin: 0;
+              color: inherit;
+            }
+          }
+        }
+      }
+    }
+    #about-us-text {
+      display: grid;
+      grid-template-columns: [leftGutter] auto [txt] 376px [rightGutter] auto;
+      .p-main {
+        grid-column: txt;
+      }
+      #about-us-heading-box {
+        display: grid;
+        grid-template-columns: [leftBox] auto [txt] 376px [rightBox] auto;
+        #about-us-marker {
+          grid-column: leftBox;
+          margin-right: 1.5rem;
+        }
+        .h1 {
+          grid-column: txt;
+        }
+      }
+    }
+  }
+
+  // Fernweh
+
+  #fernweh-section {
+    #fernweh-grid-container {
+      grid-template-columns: auto [txt] 376px auto;
+      grid-template-rows: 1fr;
+      #fernweh-heading-box {
+        grid-column: txt;
+        display: grid;
+        grid-template-columns: [leftBox] auto [mid] 376px;
+        .h1 {
+          grid-column: mid;
+        }
+        #fernweh-marker {
+          grid-column: leftBox;
+          grid-row: 1;
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+
+  // Reasons
+
+  #reasons-section {
+    #reasons-grid-container {
+      grid-template-columns: auto [txt] 376px auto;
+      grid-template-rows: 1fr;
+      #reasons-heading-box {
+        grid-column: txt;
+        display: grid;
+        grid-template-columns: [leftBox] auto [mid] 376px [rightBox] auto;
+        .h1-french {
+          width: 454px;
+        }
+        #reasons-marker {
+          @include section-marker-props(2px, 56px, $brown, 1rem);
+        }
+        .h1 {
+          grid-column: mid;
+          width: 29rem;
+        }
+        #reasons-marker {
+          grid-column: leftBox;
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+
+  // theory section
+
+  #theorie-section {
+    #theorie-grid-container {
+      #theorie-heading-box {
+        display: grid;
+        .mobile-heading-box {
+          display: none;
+        }
+        .tablet-heading-box {
+          display: grid;
+          grid-template-columns: [leftBox] auto [mid] 376px [rightBox] auto;
+          .theorie-marker {
+            @include section-marker-props(2px, 56px, $dark-green, 1rem);
+            grid-column: leftBox;
+            margin-right: 1.5rem;
+          }
+          .h2 {
+            grid-column: mid;
+          }
+        }
+      }
+    }
+    #theorie-card {
+      #theorie-text-area {
+        display: grid;
+        grid-template-columns: auto [txtArea] 376px auto;
+        .h3-regular {
+          grid-column: txtArea;
+        }
+        .p-main {
+          grid-column: txtArea;
+        }
+        .read-more-btn {
+          grid-column: txtArea;
+        }
+      }
+    }
+  }
+  // Stand alone pages
+
+  // Theorie
+
+  #theorie-page-wrapper {
+    .theorie-page-intro {
+      .theorie-page-text-box {
+        margin: 2.5rem 0 0 0;
+      }
+    }
+  }
+}

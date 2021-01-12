@@ -1,0 +1,27 @@
+@media only screen and (min-width: 1300px) {
+  #fernweh-page {
+    .fernweh-nav {
+      margin: 11rem 0 5rem 17.5%;
+    }
+    .fernweh-story {
+      .fernweh-intro {
+        grid-template-columns: [txt] 1fr [img] 1.8fr;
+        max-width: 1150px;
+        margin: 2px 0 16rem 17.5%;
+      }
+      .fernweh-main {
+        .fernweh-story-content {
+          max-width: 1400px;
+        }
+        .fernweh-story-content {
+          .text-img-box {
+            grid-template-columns: [img] 1fr [txt] 0.9fr;
+          }
+          .text-img-box-two {
+            grid-template-columns: [txt] 0.8fr [img] 1.2fr;
+          }
+        }
+      }
+    }
+  }
+}

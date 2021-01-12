@@ -1,0 +1,63 @@
+@media only screen and (min-width: 1300px) {
+  #fernweh-section {
+    padding: 5rem 0 7rem 11%;
+    #fernweh-cards-container {
+      // Express Carousel
+
+      .carousel {
+        #fernweh-card {
+          grid-template-columns: [txtBox] 1.5fr [imgBox] 2.7fr;
+        }
+      }
+    }
+  }
+  .aboutUs-instagram-wrapper,
+  #theorie-section {
+    padding: 0 0 6rem 11%;
+  }
+  #reasons-section {
+    padding: 5rem 0 7rem 11%;
+    .BrainhubCarousel__container {
+      .BrainhubCarousel {
+        .BrainhubCarousel__customArrows,
+        .BrainhubCarousel__custom-arrowLeft {
+          left: 12.5%;
+        }
+      }
+    }
+  }
+
+  #theorie-section {
+    padding: 8rem 0 11rem 11%;
+  }
+
+  #friends-section {
+    margin: 0 0 11rem 11%;
+  }
+
+  #sponsors-partners-section {
+    #sponsors-heading-box {
+      margin-left: 11%;
+    }
+    #partners-heading-box {
+      margin: 0 0 5rem 11%;
+    }
+  }
+
+  // Stand alone - Theorie
+  #theorie-page-wrapper {
+    .theorie-page-intro {
+      margin: 15rem 0 9rem 18%;
+    }
+    .theorie-page-text {
+      padding: 0 0 0 18%;
+    }
+    .info-banner,
+    .info-banner-li {
+      padding: 2.3rem 0 3rem 18%;
+    }
+    .sources-box {
+      margin: 12rem 4rem 1rem 18%;
+    }
+  }
+}

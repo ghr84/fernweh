@@ -1,0 +1,85 @@
+@media only screen and (min-width: 571px) {
+  #reasons-section {
+    // Reasons carousel
+    .BrainhubCarousel__container {
+      .BrainhubCarousel {
+        display: grid;
+        grid-template-columns: [gutter1] 1rem [gutter2] 4.5rem [cards] 388px auto;
+        .BrainhubCarousel__arrow--disable {
+          opacity: 0.7;
+        }
+        .BrainhubCarousel__custom-arrowLeft {
+          justify-self: flex-start;
+          grid-column: gutter2;
+        }
+      }
+    }
+  }
+
+  // Friends Section
+
+  #friends-section {
+    #friends-card-container {
+      .BrainhubCarousel__container {
+        .BrainhubCarousel {
+          display: grid;
+          grid-template-columns: [gutter1] 1rem [gutter2] 4.5rem [cards] auto auto;
+          position: relative;
+          .BrainhubCarousel__arrow--disable {
+            opacity: 0.7;
+          }
+          .BrainhubCarousel__custom-arrowLeft {
+            justify-self: flex-start;
+            grid-column: gutter2;
+            top: 18%;
+            position: absolute;
+          }
+          .BrainhubCarousel__custom-arrowRight {
+            top: 18%;
+            right: 0;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+
+  // Stand alone - Media
+
+  #media-page-wrapper {
+    .media-intro {
+      .txt-container {
+        display: grid;
+        grid-template-columns: [line-1] auto [txt] 376px [line-2] auto;
+        .heading-box {
+          grid-column: txt;
+          display: grid;
+          grid-template-columns: [leftBox] auto [txt] 376px [rightBox] auto;
+          align-items: center;
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+          .media-marker {
+            grid-column: leftBox;
+          }
+          .h1 {
+            grid-column: txt;
+          }
+        }
+        .heading-box-mobile {
+          display: none;
+        }
+        .text-box {
+          grid-column: txt;
+        }
+      }
+    }
+
+    .download-section {
+      max-width: 317px;
+    }
+  }
+
+  footer {
+    grid-template-columns: 4.4rem [txtBoxOne] 188px [txtBoxTwo] auto 4.8rem;
+  }
+}

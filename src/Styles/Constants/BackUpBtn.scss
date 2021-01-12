@@ -1,0 +1,36 @@
+// Back Up Btn - Toogle between active and unactive classes to display and hide button
+
+.back-up-btn-unactive {
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  border: none;
+  opacity: 0;
+  transition: ease-in-out height 0.55s;
+}
+.back-up-btn-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  cursor: pointer;
+  background-color: #16181b;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.442);
+  opacity: 0.9;
+  z-index: 4;
+  transition: ease-in-out opacity 0.55s;
+  #up-arrow-icon {
+    background-image: url("../../Assets/Icons/up-arrow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 12px;
+    width: 19px;
+    margin-bottom: 0.3rem;
+  }
+}

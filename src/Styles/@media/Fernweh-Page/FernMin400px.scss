@@ -1,0 +1,133 @@
+@media only screen and (min-width: 400px) {
+  #fernweh-page {
+    .fernweh-nav {
+      margin: 2rem auto 2rem auto;
+    }
+    .fernweh-story {
+      .fernweh-intro {
+        .fernweh-intro-img-zusammen,
+        .fernweh-intro-img-abenteuer,
+        .fernweh-intro-img-kultur,
+        .fernweh-intro-img-malAnders {
+          height: 23rem;
+        }
+        .fernweh-text-box {
+          display: grid;
+          grid-template-columns: auto [midContent] 376px auto;
+          margin: 1.8rem 0rem;
+          .h4 {
+            grid-column: midContent;
+          }
+          .h1 {
+            grid-column: midContent;
+          }
+          .p-main {
+            grid-column: midContent;
+          }
+        }
+      }
+      .fernweh-main {
+        .fernweh-story-content {
+          .text-img-box {
+            .abenteuer-text-box,
+            .fernweh-text-box {
+              display: grid;
+              grid-template-columns: auto [midContent] 376px auto;
+              margin: 0;
+              .h4,
+              .h1,
+              .p-main {
+                grid-column: midContent;
+              }
+            }
+
+            .image-container {
+              .zusammen-img-tukTuk {
+                height: 24rem;
+              }
+              .malAnders-img-text-box,
+              .abenteuer-img-text-box,
+              .img-text-box {
+                display: grid;
+                grid-template-columns: auto [midContent] 376px auto;
+                padding: 1rem 0;
+                .p-scndry {
+                  grid-column: midContent;
+                  margin: 0;
+                }
+              }
+            }
+          }
+          .text-img-box-two {
+            .fernweh-text-box {
+              display: grid;
+              grid-template-columns: auto [midContent] 376px auto;
+              margin: 0;
+              .h4,
+              .h1 {
+                grid-column: midContent;
+              }
+              .p-main {
+                margin-top: 1rem;
+                grid-column: midContent;
+              }
+            }
+            .image-container {
+              margin: 2rem 0;
+              .zusammen-img-kid {
+                height: 24rem;
+              }
+              .malAnders-img-text-box,
+              .kultur-img-text-box,
+              .img-text-box {
+                display: grid;
+                grid-template-columns: auto [midContent] 376px auto;
+                padding: 1rem 0;
+                .p-scndry {
+                  grid-column: midContent;
+                  margin: 0;
+                }
+              }
+            }
+            .fernweh-text-box-two {
+              display: grid;
+              grid-template-columns: auto [midContent] 376px auto;
+
+              .h4,
+              .h1,
+              .p-main {
+                grid-column: midContent;
+              }
+            }
+          }
+        }
+        .co2-info-box {
+          display: grid;
+          grid-template-columns: auto [midContent] 376px auto;
+          .fernweh-stories-source-box {
+            grid-column: midContent;
+          }
+          .h4,
+          .h1,
+          .p-main {
+            grid-column: midContent;
+          }
+        }
+        .travel-tips-intro {
+          .travel-banner-kultur,
+          .travel-banner-abenteuer,
+          .travel-banner-malAnders,
+          .travel-banner-zusammen {
+            display: grid;
+            grid-template-columns: auto [midContent] 376px auto;
+            .malAnders-travel-banner-text-box,
+            .abenteuer-travel-banner-text-box,
+            .travel-banner-text-box {
+              grid-column: midContent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

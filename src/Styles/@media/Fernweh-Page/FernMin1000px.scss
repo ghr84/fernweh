@@ -1,0 +1,258 @@
+@media only screen and (min-width: 1000px) {
+  #fernweh-page {
+    .fernweh-nav {
+      margin: 11rem 0 5rem 14%;
+    }
+    .fernweh-story {
+      .fernweh-intro {
+        margin: 2px 0 16rem 14%;
+        display: grid;
+        grid-template-columns: [txt] 1fr [img] 1.15fr;
+        grid-template-rows: [row1] 1fr;
+        .fernweh-intro-img-malAnders {
+          height: 25rem;
+        }
+        .fernweh-intro-img-zusammen {
+          height: 23rem;
+        }
+        .fernweh-text-box {
+          max-height: 262px;
+          grid-column: txt;
+          grid-row: row1;
+          display: grid;
+          grid-template-columns: [midContent] 350px;
+          margin: 1.8rem 0rem;
+          .h4 {
+            grid-column: midContent;
+          }
+          .h1 {
+            grid-column: midContent;
+          }
+          .p-main {
+            grid-column: midContent;
+          }
+        }
+        .mal-anders-intro-text {
+          margin: 1rem 0rem;
+        }
+      }
+
+      .fernweh-main {
+        .fernweh-story-content {
+          margin: 13rem auto;
+          .h1 {
+            max-width: 435px;
+          }
+          .text-img-box-kultur {
+            margin-top: 9rem;
+          }
+          .text-img-box-abenteuer {
+            margin-top: 9rem;
+          }
+          .text-img-box-malAnders {
+            margin-top: 15rem;
+          }
+          .text-img-box {
+            grid-column: txt;
+            display: grid;
+            grid-template-columns: [img] 1fr [txt] 1.2fr;
+            grid-template-rows: [row1] 1fr;
+
+            .abenteuer-text-box {
+              margin-bottom: 17rem;
+              grid-column: txt;
+              grid-row: row1;
+              display: block;
+              margin: 7rem 0 17rem 4rem;
+
+              .h4,
+              .h1,
+              .p-main {
+                grid-column: midContent;
+              }
+            }
+            .fernweh-text-box {
+              grid-column: txt;
+              grid-row: row1;
+              display: grid;
+              grid-template-columns: 6rem [midContent] 376px auto;
+              .h4,
+              .h1,
+              .p-main {
+                grid-column: midContent;
+              }
+            }
+            .kultur-text-box {
+              display: block;
+              margin: 2.5rem 0 0 5rem;
+            }
+            .image-container {
+              grid-column: img;
+              grid-row: row1;
+              align-self: center;
+              margin: 0rem 0;
+              .zusammen-img-tukTuk {
+                height: 36rem;
+              }
+              .abenteuer-img-joga {
+                height: 30rem;
+              }
+              .malAnders-img-woodHouse {
+                height: 30rem;
+              }
+              .malAnders-img-river {
+                display: block;
+                background-image: url("../../../Assets/Images/pictures Jessica/river.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                width: 100%;
+                height: 30rem;
+              }
+              .abenteuer-img-bridge {
+                display: block;
+                background-image: url("../../../Assets/Images/pictures Julia/bridge.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                width: 100%;
+                height: 30rem;
+              }
+              .abenteuer-img-text-box {
+                display: block;
+                padding: 1rem;
+                margin-top: -1.99rem;
+                width: 63%;
+                .p-scndry {
+                  grid-column: midContent;
+                  margin: 0;
+                }
+              }
+              .malAnders-img-text-box {
+                width: 90%;
+                max-width: 420px;
+                margin: -19px 0px 0 0px;
+              }
+              .kultur-img-fridayBanner {
+                height: 24rem;
+              }
+              .kultur-img-winterthurBanner {
+                display: block;
+                background-image: url("../../../Assets/Images/pictures Adriana/winterthur.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                width: 100%;
+                height: 30rem;
+              }
+              .img-text-box {
+                display: block;
+                padding: 1rem;
+                margin-top: -1.99rem;
+                width: 50%;
+                .p-scndry {
+                  grid-column: midContent;
+                  margin: 0;
+                }
+              }
+            }
+          }
+          .text-img-box-two {
+            grid-column: txt;
+            display: grid;
+            grid-template-columns: [txt] 1.2fr [img] 1.2fr;
+            grid-template-rows: [row1] 1fr;
+            margin: 12rem 0 0 14%;
+
+            .fernweh-text-box {
+              grid-column: txt;
+              display: block;
+              margin: 1.2rem 3.5rem 0 0;
+            }
+            .image-container {
+              margin: 0;
+              grid-column: img;
+              grid-row: row1;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              .zusammen-img-kid {
+                height: 36rem;
+              }
+              .abenteuer-img-landMark {
+                height: 36rem;
+                margin: 8rem 0 0 0;
+              }
+              .kultur-img-saturdayBanner {
+                height: 28rem;
+                margin-top: 170px;
+              }
+
+              .kultur-img-text-box {
+                display: block;
+                padding: 1rem 1rem 1rem 1.5rem;
+                margin: -1.5rem 0 0 0;
+                width: 76%;
+              }
+              .malAnders-img-tent {
+                height: 25rem;
+              }
+              .malAnders-img-text-box {
+                display: block;
+                padding: 1rem 1rem 1rem 1.5rem;
+                margin: -1.5rem 0 0 0;
+                width: 85%;
+                max-width: 475px;
+              }
+              .img-text-box {
+                display: block;
+                padding: 1rem 1rem 1rem 1.5rem;
+                margin: -1.5rem 0 0 0;
+                width: 50%;
+              }
+            }
+            .fernweh-text-box-two {
+              display: block;
+              grid-column: txt;
+              margin-top: -8rem;
+            }
+            .zusammen-text-mobile {
+              display: none;
+            }
+            .zusammen-text-desktop {
+              display: block;
+              grid-column: txt;
+              .h1 {
+                margin-top: 2.5rem;
+              }
+            }
+          }
+        }
+        .co2-info-box {
+          display: grid;
+          grid-template-columns: auto [midContent] 415px auto;
+          .h4,
+          .h1,
+          .p-main {
+            grid-column: midContent;
+            max-width: none;
+          }
+        }
+        .travel-tips-wrapper {
+          .travel-tips-intro {
+            .travel-banner-zusammen,
+            .travel-banner-abenteuer,
+            .travel-banner-kultur,
+            .travel-banner-malAnders {
+              height: 28.5rem;
+              .abenteuer-travel-banner-text-box,
+              .travel-banner-text-box {
+                grid-column: midContent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

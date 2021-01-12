@@ -1,0 +1,487 @@
+@media only screen and (min-width: 1000px) {
+  #header {
+    padding: 0.6rem 2rem 0.6rem 1rem;
+    #mobile-nav {
+      display: none;
+    }
+    #desktop-nav {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  .aboutUs-instagram-wrapper {
+    padding: 0 0 6rem 4%;
+    #about-us-section {
+      padding: 12rem 0 7rem 0;
+      display: grid;
+      grid-template-columns: [txt] 1fr [img] 1fr;
+      grid-template-rows: [row] 1fr;
+      #about-us-img-box {
+        #about-us-img {
+          height: 26rem;
+        }
+        grid-column: img;
+        #about-us-img-info-box {
+          margin: 0 0 0 auto;
+          max-width: 382px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0.6rem 1rem;
+          background-color: #3fadba;
+          color: white;
+        }
+      }
+      #about-us-text {
+        padding-right: 1rem;
+        display: block;
+        grid-column: txt;
+        grid-row: row;
+        .p-main {
+          margin-left: 6.1rem;
+          max-width: 357px;
+        }
+        #about-us-heading-box {
+          justify-content: flex-start;
+        }
+      }
+    }
+    #instagram-section {
+      display: block;
+      padding-left: 4rem;
+      #instagram-banner {
+        padding: 2rem 2.5rem 3rem 2.5rem;
+      }
+    }
+  }
+
+  // Fernweh Section
+
+  #fernweh-section {
+    padding: 5rem 0 9rem 4%;
+    #fernweh-grid-container {
+      display: block;
+      #fernweh-heading-box {
+        grid-column: txt;
+        justify-content: flex-start;
+      }
+    }
+    #fernweh-cards-container {
+      display: block;
+      margin-left: 5rem;
+
+      // Express Carousel
+
+      .carousel {
+        grid-column: cards;
+        height: 548px;
+        .carousel__dot-group {
+          margin: 1rem;
+        }
+        .buttonBack___1mlaL,
+        .carousel__back-button {
+          position: absolute;
+          top: 225px;
+          left: -88px;
+        }
+        .buttonNext___2mOCa,
+        .carousel__next-button {
+          right: 20px;
+          top: 225px;
+        }
+        .horizontalSlider___281Ls,
+        .carousel__slider,
+        .carousel__slider--horizontal {
+          height: 35rem;
+        }
+
+        #fernweh-card {
+          display: grid;
+          grid-template-columns: [txtBox] 1.5fr [imgBox] 3fr;
+          grid-template-rows: [row1] 1fr;
+          height: 32rem;
+          min-width: 100%;
+          margin: 0 0 0 -1rem;
+          img {
+            grid-column: imgBox;
+            grid-row: row1;
+            object-fit: cover;
+            height: 95%;
+          }
+          #fernweh-text-area {
+            padding: 1rem 3rem 1rem 2rem;
+            min-width: 320px;
+            max-width: 320px;
+            .h3-regular {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Reasons
+
+  #reasons-section {
+    padding: 5rem 0 7rem 4%;
+    #reasons-grid-container {
+      display: block;
+      #reasons-heading-box {
+        grid-column: txt;
+        justify-content: flex-start;
+        margin: 0 0 4rem 0;
+      }
+    }
+    .BrainhubCarousel__container {
+      .BrainhubCarousel {
+        display: flex;
+        .BrainhubCarousel__custom-arrowLeft {
+          z-index: 2;
+          grid-column: null;
+          position: absolute;
+          left: 5.5%;
+        }
+        .BrainhubCarousel__custom-arrowRight {
+          right: 1%;
+          position: absolute;
+        }
+
+        .BrainhubCarousel__trackContainer {
+          display: block;
+          width: 100%;
+          margin-left: 6rem;
+        }
+      }
+    }
+  }
+
+  // Theorie Section
+
+  #theorie-section {
+    padding: 8rem 0 11rem 4%;
+    #theorie-card {
+      display: grid;
+      grid-template-columns: [txtBox] 2.1fr [imgBox] 2.6fr;
+      #theorie-grid-container {
+        padding: 1rem 0 0 0;
+        grid-column: txtBox;
+        grid-row: 2;
+        display: block;
+        #theorie-heading-box {
+          .tablet-heading-box {
+            display: flex;
+          }
+          justify-content: flex-start;
+        }
+      }
+
+      .theorie-img {
+        height: 32.5rem;
+        margin: 0;
+        grid-row: rowOne;
+        grid-column: imgBox;
+        object-fit: cover;
+      }
+      #theorie-text-area {
+        grid-template-columns: 6rem [txtArea] 309px 2rem;
+        grid-row: rowOne;
+        grid-column: txtBox;
+        padding: 5.5rem 0rem 2rem 0;
+        .desktop-heading-box {
+          display: flex;
+          .h1 {
+            margin-left: 1rem;
+          }
+          .theorie-marker {
+            margin-right: 2rem;
+            @include section-marker-props(2px, 56px, $dark-green, 1rem);
+          }
+        }
+        .h3-regular {
+          max-width: 19rem;
+        }
+        .p-main {
+          max-width: 19rem;
+        }
+        #read-more-btn {
+          margin: 4rem 0 0 0;
+        }
+      }
+    }
+  }
+
+  // Friends Section
+
+  #friends-section {
+    margin: 0 0 11rem 4%;
+    #friends-grid-container {
+      display: block;
+      margin-left: 6rem;
+      #friends-heading-box {
+        margin: 0 0 5rem 0;
+        display: block;
+      }
+    }
+    #friends-card-container {
+      .BrainhubCarousel__container {
+        .BrainhubCarousel {
+          display: flex;
+          .BrainhubCarousel__custom-arrowLeft {
+            z-index: 2;
+            position: absolute;
+            left: 1.5%;
+          }
+          .BrainhubCarousel__custom-arrowRight {
+            right: 1%;
+            position: absolute;
+          }
+          .BrainhubCarousel__trackContainer {
+            display: block;
+            width: 100%;
+            margin-left: 6rem;
+            overflow: null;
+            .friends-card {
+              margin-right: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Sponsors Section
+
+  #sponsors-partners-section {
+    display: block;
+    margin: 0 0 15rem 0;
+    #sponsors-heading-box {
+      display: flex;
+      flex-direction: column;
+      margin-left: 4%;
+      padding-left: 5.7rem;
+    }
+    #sponsors-icon-container {
+      margin-bottom: 5rem;
+    }
+    #partners-heading-box {
+      display: block;
+      margin: 0 0 5rem 4%;
+      padding-left: 5.7rem;
+      .h3-regular {
+        grid-column: headingBox;
+      }
+    }
+  }
+
+  // Stand alone pages
+
+  // Theorie
+
+  #theorie-page-wrapper {
+    // Intro section
+
+    .theorie-page-intro {
+      margin: 15rem 0 9rem 16%;
+      display: grid;
+      grid-template-columns: [txt] 2fr [img] 2.3fr;
+      grid-template-rows: [row] 1fr;
+
+      .theorie-page-text-box {
+        grid-column: txt;
+        grid-row: row;
+        max-width: 321px;
+        align-self: center;
+        margin: 0;
+        .p-main {
+          max-width: 344px;
+        }
+      }
+      .theorie-page-intro-img {
+        grid-column: img;
+        grid-row: row;
+      }
+    }
+
+    // Main content section
+    .theorie-page-text {
+      padding: 0 0 0 16%;
+      display: flex;
+      margin: 0 0 4rem 0;
+      .heading-paragraph-box {
+        margin: 0 4rem 0 0;
+        .h2 {
+          max-width: 380px;
+        }
+      }
+      .paragraph-box {
+        margin: 4.4rem 0rem 0 0;
+      }
+
+      .paragraph-box-fr {
+        margin: 2.1rem 0rem 0 0;
+      }
+      .infograph {
+        background-color: $pelorous;
+        height: 30rem;
+        width: 20rem;
+        align-self: center;
+      }
+    }
+    .theorie-page-text {
+      .h2 {
+        max-width: 380px;
+      }
+    }
+    .theorie-text-mobile {
+      display: none;
+    }
+    .info-banner {
+      padding: 2.3rem 0 3rem 16%;
+      margin: 6rem 0;
+      .banner-wrapper {
+        width: 100%;
+        max-width: 830px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        .headline-box {
+          width: 30%;
+          max-width: 197px;
+          .h3-regular {
+            font-weight: bold;
+          }
+        }
+        .text-box-desktop {
+          display: block;
+        }
+        .text-box {
+          display: flex;
+          justify-content: space-between;
+          width: 67%;
+          max-width: 580px;
+          margin-right: 2rem;
+          :first-child {
+            margin: 0 1.8rem 0 0;
+          }
+          .p-main {
+            color: white;
+            width: 255px;
+            margin-top: 0;
+          }
+        }
+        .text-box-mobile {
+          display: none;
+        }
+      }
+    }
+
+    .info-banner-li {
+      padding: 2.3rem 0 3rem 16%;
+      margin: 6rem 0;
+      .banner-wrapper {
+        max-width: 867px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        .headline-box {
+          width: 30%;
+          max-width: 220px;
+
+          .h3-regular {
+            font-weight: bold;
+          }
+        }
+        .text-box {
+          display: flex;
+          justify-content: space-evenly;
+          width: 70%;
+          margin-top: 0;
+          max-width: 650px;
+          color: white;
+          .list-items {
+            margin: 0;
+            .p-main {
+              margin: 0;
+            }
+          }
+          :first-child {
+            margin: 0 1.8rem 0 0;
+          }
+          :nth-child(2) {
+            margin-top: 0;
+          }
+          .p-main {
+            color: white;
+            width: 255px;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+    .email-box {
+      display: none;
+    }
+    .email-box-desktop {
+      display: block;
+    }
+    .sources-box {
+      max-width: 1000px;
+      margin: 12rem 4rem 1rem 16%;
+      padding: 1.5rem 1rem 3rem 0rem;
+      span {
+        display: block;
+        margin-bottom: 0.8rem;
+        font-size: 12px;
+      }
+    }
+  }
+
+  // Media Stand alone
+
+  #media-page-wrapper {
+    padding: 0 0 6rem 13.5%;
+    .media-intro {
+      display: grid;
+      grid-template-columns: [txt] 0.6fr [img] 0.9fr;
+      padding: 12rem 0 6rem 0;
+      .media-intro-img {
+        grid-column: img;
+        height: 20rem;
+      }
+      .txt-container {
+        grid-column: txt;
+        grid-row: 1;
+        display: block;
+        margin: 2.5rem 0 3rem 0;
+        padding: 0;
+        .heading-box {
+          display: grid;
+          grid-template-columns: [leftBox] auto [txt] 317px [rightBox] auto;
+        }
+      }
+    }
+    .extra-info-card-wrapper {
+      display: flex;
+      align-self: flex-start;
+      margin-left: -1.7rem;
+    }
+    .download-section {
+      display: grid;
+      grid-template-columns: [col-1] 1.2fr [col-2] 1fr;
+      max-width: none;
+      margin: 6rem 0;
+      align-self: end;
+      padding: 0;
+      .brochure {
+        grid-column: col-1;
+      }
+      .Logos {
+        margin: 0;
+        grid-column: col-2;
+      }
+    }
+  }
+}

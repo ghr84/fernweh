@@ -1,0 +1,115 @@
+// Roboto Condensed
+
+// Headings
+
+.h1 {
+  font-family: "roboto-condensed-bold", "Arial Narrow", Helvetica, sans-serif;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.h1-french {
+  font-family: "roboto-condensed-bold", "Arial Narrow", Helvetica, sans-serif;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.h2 {
+  font-family: "roboto-condensed-bold", "Arial Narrow", Helvetica, sans-serif;
+  margin: 0;
+  font-size: 1.875rem;
+}
+
+.h2-french {
+  font-family: "roboto-condensed-bold", "Arial Narrow", Helvetica, sans-serif;
+  margin: 0;
+  font-size: 1.675rem;
+}
+
+.h3 {
+  font-family: "roboto-condensed-bold", "Arial Narrow", Helvetica, sans-serif;
+  margin: 0.4rem 0 0 0;
+  letter-spacing: 0.04rem;
+  font-size: 1.5rem;
+}
+
+.h3-regular {
+  font-family: "roboto-condensed-regular", "Arial Narrow", Helvetica, sans-serif;
+  margin: 0.4rem 0 0 0;
+  letter-spacing: 0.04rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.h3-regular-bold {
+  font-family: "roboto-condensed-bold", "Arial Narrow", Helvetica, sans-serif;
+  margin: 0.4rem 0 0 0;
+  letter-spacing: 0.04rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.h4 {
+  font-family: "roboto-condensed-bold", "Arial Narrow", Helvetica, sans-serif;
+  margin: 0.4rem 0 0 0;
+  letter-spacing: 0.04rem;
+  font-size: 0.9rem;
+}
+
+.activity-label {
+  font-family: "roboto-condensed-bold", "Arial Narrow", Helvetica, sans-serif;
+  letter-spacing: 0.04rem;
+  font-size: 1.5rem;
+}
+
+// Paragraphs
+
+.p-main {
+  font-family: "roboto-condensed-regular", "Arial Narrow", Helvetica, sans-serif;
+  max-width: 376px;
+  color: $scndry-black;
+  font-size: 1rem;
+  line-height: 144.5%;
+  letter-spacing: 0.05rem;
+  margin: 1rem 0 0 0;
+}
+
+.p-main-large {
+  font-family: "roboto-condensed-regular", "Arial Narrow", Helvetica, sans-serif;
+  font-size: 1.25rem;
+  line-height: 144.5%;
+  letter-spacing: 0.05rem;
+}
+
+.p-scndry {
+  font-family: "roboto-condensed-regular", "Arial Narrow", Helvetica, sans-serif;
+  margin: 1rem 0 0 0;
+  max-width: 376px;
+  font-size: 0.9rem;
+  line-height: 144.5%;
+  letter-spacing: 0.05rem;
+}
+
+// Footer
+
+.footer-labels {
+  font-family: "roboto-condensed-bold", "Arial Narrow", Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.footer-items {
+  font-family: "roboto-condensed-regular", "Arial Narrow", Helvetica, sans-serif;
+  margin: 0 0 0.75rem 0;
+  font-size: 0.875rem;
+}
+
+// Amatic SC
+
+.amatic-bold {
+  font-family: "amatic-bold", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.amatic-regular {
+  font-family: "amatic-regular", Arial, Helvetica, sans-serif;
+}

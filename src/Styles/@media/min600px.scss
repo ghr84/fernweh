@@ -1,0 +1,60 @@
+@media only screen and (min-width: 600px) {
+  .burger-menu-wrapper {
+    .burger-menu-open {
+      width: 70%;
+    }
+  }
+  #fernweh-section {
+    #fernweh-cards-container {
+      .BrainhubCarousel__container {
+        max-width: 600px;
+        margin: 0 auto;
+        .BrainhubCarousel {
+          .BrainhubCarousel__custom-arrowRight {
+            padding: 0 0 6rem 1rem;
+            align-self: flex-start;
+            z-index: 2;
+            transform: rotate(180deg);
+            img {
+              margin-right: 3px;
+            }
+          }
+          .BrainhubCarousel__custom-arrowLeft {
+            padding: 6rem 0 0rem 1rem;
+            align-self: flex-start;
+            z-index: 2;
+            .prev-btn {
+              img {
+                margin-right: 3px;
+              }
+            }
+          }
+          .BrainhubCarousel__trackContainer {
+            .BrainhubCarousel__track,
+            .BrainhubCarousel__track--draggable {
+              .BrainhubCarouselItem,
+              .BrainhubCarouselItem--active {
+                #fernweh-card {
+                  #fernweh-text-area {
+                    display: grid;
+                    grid-template-columns: auto [textArea] 375px auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Media - stand alone
+
+  #media-page-wrapper {
+    .media-intro {
+      .media-intro-img {
+        height: 26rem;
+      }
+    }
+  }
+}

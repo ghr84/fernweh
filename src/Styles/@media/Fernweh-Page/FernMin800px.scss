@@ -1,0 +1,44 @@
+@media only screen and (min-width: 800px) {
+  #fernweh-page {
+    .fernweh-story {
+      .fernweh-main {
+        .co2-info-box {
+          padding: 2rem 0 5.5rem 0;
+        }
+        .travel-tips-wrapper {
+          .travel-tips-intro {
+            .travel-banner-kultur,
+            .travel-banner-abenteuer,
+            .travel-banner-malAnders,
+            .travel-banner-zusammen {
+              display: block;
+              margin: -16px 0;
+              padding: 1rem 0;
+              width: 100%;
+              position: absolute;
+              left: 0;
+              height: 22rem;
+              .abenteuer-travel-banner-text-box,
+              .malAnders-travel-banner-text-box,
+              .travel-banner-text-box {
+                margin-left: 3.7rem;
+              }
+            }
+            .travel-map {
+              display: flex;
+              justify-content: flex-end;
+              img {
+                width: 50%;
+                background-size: cover;
+                z-index: 1;
+                margin: -1.5rem 2rem 0 0;
+                transform: rotate(3deg);
+                max-width: 550px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

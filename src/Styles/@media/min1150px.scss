@@ -1,0 +1,25 @@
+@media only screen and (min-width: 1150px) {
+  .aboutUs-instagram-wrapper {
+    padding: 0 0 6rem 8%;
+    #about-us-section {
+      padding: 12rem 0 7rem 0;
+      display: grid;
+      grid-template-columns: [txt] 0.8fr [img] 1fr;
+      grid-template-rows: [row] 1fr;
+    }
+  }
+  #theorie-section {
+    padding: 8rem 0 11rem 8%;
+    #theorie-card {
+      grid-template-columns: [txtBox] 2.1fr [imgBox] 3fr;
+    }
+  }
+
+  // Media - stand alone
+
+  #media-page-wrapper {
+    .media-intro {
+      grid-template-columns: [txt] 0.6fr [img] 0.9fr;
+    }
+  }
+}

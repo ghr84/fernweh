@@ -1,0 +1,334 @@
+@media only screen and (min-width: 400px) {
+  // Fernweh Schweiz - About us section
+
+  #about-us-section {
+    #about-us-img-box {
+      #about-us-img-info-box {
+        display: grid;
+        grid-template-columns: auto [txt] 376px auto;
+        #about-us-info-box-text {
+          grid-column: txt;
+          align-self: center;
+        }
+      }
+    }
+    #about-us-text {
+      display: grid;
+      grid-template-columns: [line-1] auto [txt] 376px [line-2] auto;
+      .p-main {
+        grid-column: txt;
+      }
+      #about-us-heading-box {
+        grid-column: txt;
+        #about-us-marker {
+          @include section-marker-props(2px, 56px, $pelorous, 1rem);
+        }
+      }
+    }
+  }
+
+  #instagram-section {
+    #instagram-banner {
+      padding: 2rem 2rem;
+    }
+  }
+
+  // Fernweh section
+
+  #fernweh-section {
+    #fernweh-grid-container {
+      grid-template-columns: auto [txt] 376px auto;
+      grid-template-rows: 1fr;
+      #fernweh-heading-box {
+        grid-column: txt;
+        #fernweh-marker {
+          @include section-marker-props(2px, 56px, $orange, 1rem);
+        }
+      }
+    }
+    #fernweh-cards-container {
+      grid-template-columns: auto [carousel] 400px auto;
+      .carousel {
+        #fernweh-card {
+          #fernweh-text-area {
+            padding: 0 0 0 0.5rem;
+          }
+        }
+      }
+    }
+    // Fernweh Carousel
+  }
+
+  // 10 reasons section
+
+  #reasons-section {
+    #reasons-grid-container {
+      grid-template-columns: auto [txt] 376px auto;
+      grid-template-rows: 1fr;
+      #reasons-heading-box {
+        grid-column: txt;
+        .h1 {
+          width: 100%;
+        }
+        #reasons-marker {
+          min-width: 56px;
+          @include section-marker-props(2px, 56px, $brown, 1rem);
+        }
+      }
+    }
+    // Brain carousel
+
+    .BrainhubCarousel__container {
+      .BrainhubCarousel {
+        display: grid;
+        grid-template-columns: auto [cards] 376px auto;
+        .BrainhubCarousel__trackContainer {
+          display: block;
+          grid-column: cards / cards;
+          width: 300%;
+        }
+      }
+    }
+  }
+
+  // theory section
+
+  #theorie-section {
+    #theorie-grid-container {
+      display: grid;
+      grid-template-columns: auto [txt] 376px auto;
+    }
+    #theorie-card {
+      #theorie-text-area {
+        display: grid;
+        grid-template-columns: auto [txtArea] 376px auto;
+      }
+    }
+    #theorie-grid-container {
+      #theorie-heading-box {
+        .mobile-heading-box {
+          .flex-box {
+            .theorie-marker {
+              min-width: 56px;
+              margin: 1rem 1rem 0 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // friends section
+
+  #friends-section {
+    #friends-grid-container {
+      #friends-heading-box {
+        grid-template-columns: auto [headingBox] 376px auto;
+      }
+    }
+    #friends-card-container {
+      .BrainhubCarousel__container {
+        .BrainhubCarousel {
+          display: grid;
+          grid-template-columns: auto [cards] 376px auto;
+          .BrainhubCarousel__trackContainer {
+            display: block;
+            grid-column: cards / cards;
+            width: 300%;
+          }
+        }
+      }
+    }
+  }
+
+  // Sponsors and Partners section
+
+  #sponsors-partners-section {
+    #sponsors-heading-box {
+      display: grid;
+      grid-template-columns: auto [headingBox] 376px auto;
+      margin-bottom: 4rem;
+      .h1,
+      .h1-french {
+        grid-column: headingBox;
+      }
+      .h3-regular {
+        grid-column: headingBox;
+      }
+    }
+    #sponsors-icon-container {
+      margin-bottom: 4rem;
+    }
+    #partners-heading-box {
+      display: grid;
+      grid-template-columns: auto [headingBox] 376px auto;
+      margin-bottom: 4rem;
+      .h3-regular {
+        grid-column: headingBox;
+      }
+    }
+    #partners-icon-container {
+      grid-column: headingBox;
+    }
+  }
+
+  // Stand alone pages
+  // Theorie
+
+  #theorie-page-wrapper {
+    #graph-card-one {
+      justify-self: flex-start;
+      .graph-one-img {
+        &:hover {
+          height: 21rem;
+          width: 23rem;
+          top: 100px;
+        }
+      }
+    }
+    .theorie-page-intro {
+      .theorie-page-text-box {
+        grid-template-columns: auto [contentBox] 380px auto;
+      }
+    }
+    .theorie-page-text {
+      grid-template-columns: auto [contentBox] 380px auto;
+    }
+    .info-banner {
+      .banner-wrapper {
+        grid-template-columns: auto [contentBox] 380px auto;
+        .headline-box {
+          grid-column: contentBox;
+        }
+      }
+    }
+
+    .info-banner-li {
+      .banner-wrapper {
+        display: grid;
+        grid-template-columns: auto [contentBox] 380px auto;
+        .headline-box {
+          grid-column: contentBox;
+          padding: 0;
+        }
+        .text-box {
+          margin-left: 0;
+        }
+      }
+    }
+    .email-box {
+      display: grid;
+      grid-template-columns: auto [contentBox] 380px auto;
+      margin: 0 0 4rem 0;
+      span {
+        grid-column: contentBox;
+      }
+    }
+    .sources-box {
+      max-width: 380px;
+      margin: 5rem auto auto auto;
+      padding: 1.5rem 1rem 3rem 1rem;
+      span {
+        grid-column: contentBox;
+      }
+    }
+  }
+
+  // Media
+
+  #media-page-wrapper {
+    .media-intro {
+      .txt-container {
+        max-width: 317px;
+        margin: 2rem auto 3rem auto;
+        .heading-box {
+          .media-marker {
+            width: 56px;
+          }
+        }
+        .heading-box-mobile {
+          .heading-box-de {
+            .media-marker {
+              width: 56px;
+            }
+          }
+          .heading-marker-flexbox {
+            .media-marker {
+              width: 56px;
+            }
+          }
+        }
+      }
+    }
+    .extra-info-card-wrapper {
+      display: flex;
+      justify-content: center;
+      .extra-info-card {
+        width: 315px;
+        padding: 2rem 2rem 2.5rem 2rem;
+      }
+    }
+
+    .download-section {
+      max-width: 317px;
+      margin: 3rem auto 5rem auto;
+    }
+  }
+
+  // Privacy
+
+  .privacy-page-wrapper {
+    margin: 9rem 0 0 0;
+    display: grid;
+    grid-template-columns: auto [txt] 380px auto;
+    .privacy-intro {
+      grid-column: txt;
+      .h2 {
+        width: 100%;
+      }
+    }
+    .privacy-content {
+      grid-column: txt;
+      margin: 0 0 5rem 0;
+    }
+  }
+
+  // Imprint
+
+  #imprint-wrapper {
+    display: grid;
+    grid-template-columns: auto [contentBox] 250px auto;
+    margin: 12rem 0 10rem 0;
+    .content-box {
+      grid-column: contentBox;
+      .h2 {
+        margin: 0 0 2rem 0;
+      }
+      .text-box {
+        margin: 2rem 0 0 0;
+      }
+    }
+  }
+
+  // Copyright
+
+  #copyright-wrapper {
+    display: grid;
+    grid-template-columns: auto [contentBox] 380px auto;
+    margin: 12rem 0 10rem 0;
+  }
+
+  // Footer
+
+  footer {
+    display: grid;
+    grid-template-columns: 1rem [txtBoxOne] 188px [txtBoxTwo] auto 2rem;
+    grid-template-rows: 1fr;
+    #footer-col-1 {
+      grid-column: txtBoxOne;
+    }
+    #footer-col-2 {
+      grid-column: txtBoxTwo;
+    }
+  }
+}

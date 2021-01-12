@@ -1,0 +1,33 @@
+@media only screen and (min-width: 1400px) {
+  #fernweh-page {
+    .fernweh-story {
+      .fernweh-main {
+        .fernweh-story-content {
+          .text-img-box {
+            .image-container {
+              .img-text-box,
+              .abenteuer-img-text-box,
+              .malAnders-img-text-box {
+                margin-left: 8px;
+              }
+            }
+          }
+          .text-img-box-two {
+            .image-container {
+              .img-text-box,
+              .kultur-img-text-box,
+              .malAnders-img-text-box {
+                margin: -1.5rem 10px 0 0;
+              }
+            }
+          }
+        }
+      }
+      .travel-tips-wrapper {
+        .travel-tips-intro {
+          max-width: 1350px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@media only screen and (min-width: 1100px) {
+  #fernweh-page {
+    .fernweh-story {
+      .fernweh-intro {
+        grid-template-columns: [txt] 1fr [img] 1.4fr;
+      }
+      .fernweh-main {
+        .fernweh-story-content {
+          .text-img-box-two {
+            grid-template-columns: [txt] 1fr [img] 1.2fr;
+          }
+        }
+      }
+    }
+  }
+}

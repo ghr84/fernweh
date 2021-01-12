@@ -1,0 +1,48 @@
+@media only screen and (min-width: 571px) {
+  // Fernweh stories
+
+  #fernweh-page {
+    .fernweh-story {
+      .fernweh-main {
+        .travel-tips-wrapper {
+          .travel-info {
+            padding: 2rem 0 4rem 0;
+
+            .fernweh-image-container {
+              .img-text-box {
+                padding: 1rem 4.7rem;
+              }
+            }
+            .activity-section {
+              .activity-label-box {
+                margin-left: 3.7rem;
+              }
+              .travel-info-cards-container {
+                .stand-alone-card {
+                  margin: 2.8rem 0 2rem 3.8rem;
+                }
+                .BrainhubCarousel__container {
+                  .BrainhubCarousel {
+                    .BrainhubCarousel__arrow--disable {
+                      opacity: 0.7;
+                    }
+                    .BrainhubCarousel__custom-arrowLeft {
+                      justify-self: flex-start;
+                    }
+                    .BrainhubCarousel__custom-arrowRight {
+                      position: absolute;
+                      right: 16px;
+                    }
+                    .BrainhubCarousel__trackContainer {
+                      padding-left: 1rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

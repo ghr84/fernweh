@@ -1,0 +1,62 @@
+// Constants
+// Work around - Can't use %placeholders inside @media rules
+
+@mixin flex-row-space-btwn {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-column-space-btwn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin mainBtnStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 100%;
+  max-width: 376px;
+  font-family: "roboto-condensed-regular";
+  font-size: 1rem;
+  letter-spacing: 0.07rem;
+  border: none;
+  margin: 2.5rem 0 2rem 0;
+  color: white;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+// Dynamics
+
+@mixin burger-menu-stngs($transform) {
+  transform: $transform;
+  background-color: white;
+  height: 3px;
+  width: 28px;
+  border-radius: 2px;
+}
+
+@mixin flex-dir-jstCnt-algnItms($direction, $justifyContent, $alignItems) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin height-width($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin section-marker-props($height, $width, $color, $margin) {
+  height: $height;
+  width: $width;
+  background-color: $color;
+  margin: $margin;
+}

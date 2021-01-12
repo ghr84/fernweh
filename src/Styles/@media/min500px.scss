@@ -1,0 +1,72 @@
+@media only screen and (min-width: 500px) {
+  #about-us-section {
+    padding: 4rem 0 3rem 0;
+    #about-us-img-box {
+      #about-us-img {
+        height: 26rem;
+      }
+    }
+    #brochure-badge-wrapper {
+      a {
+        #brochure-badge {
+          right: 20px;
+          top: 100px;
+          transition: box-shadow ease-in-out 0.7s;
+          -webkit-transition: box-shadow ease-in-out 0.7s;
+          .text-container {
+            .p-main {
+              margin: 0;
+              color: inherit;
+            }
+          }
+        }
+      }
+      #brochure-badge:hover {
+        box-shadow: 9px 0px 15px #2d2d2c40;
+        transition: box-shadow ease-in-out 0.7s;
+        -webkit-transition: box-shadow ease-in-out 0.7s;
+      }
+    }
+  }
+  #reasons-section {
+    #reasons-grid-container {
+      margin-bottom: 2.5rem;
+      .BrainhubCarousel__container {
+        padding-top: 2rem;
+      }
+    }
+  }
+
+  // Fernweh Section
+
+  #fernweh-section {
+    #fernweh-cards-container {
+      .carousel {
+        .carousel__dot-group {
+          .dot___3c3SI {
+            height: 14px;
+            width: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  // Theorie - stand alone
+
+  #theorie-page-wrapper {
+    .theorie-page-intro {
+      .theorie-page-intro-img {
+        height: 23rem;
+      }
+    }
+  }
+
+  // Media - stand alone
+
+  #media-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,15 @@
+@media only screen and (min-width: 1200px) {
+  // Theorie - stand alone
+
+  #theorie-page-wrapper {
+    .theorie-page-intro {
+      grid-template-columns: [txt] 2fr [img] 3.1fr;
+    }
+  }
+
+  // Media - stand alone
+
+  #media-page-wrapper {
+    max-width: 950px;
+  }
+}
