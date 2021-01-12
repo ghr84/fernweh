@@ -90,21 +90,21 @@ const Footer = () => {
         </div>
         <div id="info-box">
           <h3 className="footer-labels">Info</h3>
-          <Link exact="true" to="/Imprint" onClick={() => goToTop()}>
+          <Link exact="true" to="/imprint" onClick={() => goToTop()}>
             {renderGerman ? (
               <span className="footer-items">Impressum</span>
             ) : (
               <span className="footer-items">Imprimer</span>
             )}
           </Link>
-          <Link exact="true" to="/Privacy" onClick={() => goToTop()}>
+          <Link exact="true" to="/privacy" onClick={() => goToTop()}>
             {renderGerman ? (
               <span className="footer-items">Privacy</span>
             ) : (
               <span className="footer-items">intimité</span>
             )}
           </Link>
-          <Link exact="true" to="/Copyright" onClick={() => goToTop()}>
+          <Link exact="true" to="/copyright" onClick={() => goToTop()}>
             {renderGerman ? (
               <span className="footer-items">Copyright</span>
             ) : (
