@@ -484,4 +484,25 @@
       }
     }
   }
+
+  // Error page
+
+  #error-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5rem 0 8rem 0;
+    .content-wrapper {
+      flex-direction: row-reverse;
+      margin: 8rem 0 8rem 0;
+      .error-img {
+        margin: 0 0 3rem 2rem;
+      }
+      .error-img {
+        height: 19rem;
+        width: 24rem;
+      }
+    }
+  }
 }

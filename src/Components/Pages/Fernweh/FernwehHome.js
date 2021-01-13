@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   HashRouter as Router,
   Switch,
@@ -17,10 +17,12 @@ import FernwehAbenteuer from "./Stories/Abenteuer/FernwehAbenteuer";
 import FernwehKultur from "./Stories/Kultur/FernwehKultur";
 import FernwehMalAnders from "./Stories/Mal-Anders/FernwehMalAnders";
 import FernwehZusammen from "./Stories/Zusammen/FernwehZusammen";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 const FernwehHome = ({ history }) => {
   const { fernweh } = useContext(ObserverContext);
   const [isFernwehInView, setIsFernwehInView] = fernweh;
+  const [isPathnameCorrect, setIsPathnameCorrect] = useState();
 
   useEffect(() => {
     if (
@@ -31,17 +33,30 @@ const FernwehHome = ({ history }) => {
     ) {
       setIsFernwehInView(true);
     }
-
     return () => {
       // Clean up
       setIsFernwehInView(false);
     };
   }, [setIsFernwehInView, isFernwehInView, history.location.pathname]);
 
+  useEffect(() => {
+    if (history.location.pathname === "/fernweh/abenteuer") {
+      setIsPathnameCorrect(true);
+    } else if (history.location.pathname === "/fernweh/kultur") {
+      setIsPathnameCorrect(true);
+    } else if (history.location.pathname === "/fernweh/zusammen") {
+      setIsPathnameCorrect(true);
+    } else if (history.location.pathname === "/fernweh/mal-anders") {
+      setIsPathnameCorrect(true);
+    } else {
+      return setIsPathnameCorrect(false);
+    }
+  }, [setIsPathnameCorrect, history.location.pathname]);
+
   return (
     <div id="fernweh-page" style={{ marginTop: 8 + "rem" }}>
       <Router>
-        <FernwehNav />
+        {isPathnameCorrect ? <FernwehNav /> : null}
         <Switch>
           <Route exact path="/fernweh/abenteuer" component={FernwehAbenteuer} />
           <Route exact path="/fernweh/kultur" component={FernwehKultur} />
@@ -51,6 +66,7 @@ const FernwehHome = ({ history }) => {
             component={FernwehMalAnders}
           />
           <Route exact path="/fernweh/zusammen" component={FernwehZusammen} />
+          <Route component={ErrorPage} />
         </Switch>
       </Router>
     </div>

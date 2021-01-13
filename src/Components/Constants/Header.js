@@ -200,26 +200,6 @@ const Header = ({ handleBurgerMenu, history, setBackBtnClass }) => {
             <div className="media-german-underScore-unactive"></div>
           )}
         </span>
-        {/* <NavLink
-          exact
-          to="/media/#media-page-wrapper"
-          className="nav-links"
-          aria-current="page"
-          scroll={(el) =>
-            el.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-              alignToTop: true,
-            })
-          }
-        >
-          {renderGerman ? <span>MEDIA</span> : <span>MÉDIA</span>}
-          {isMediaInView ? (
-            <div className="media-german-underScore-active"></div>
-          ) : (
-            <div className="media-german-underScore-unactive"></div>
-          )}
-        </NavLink> */}
         {renderGerman ? (
           <span
             className={

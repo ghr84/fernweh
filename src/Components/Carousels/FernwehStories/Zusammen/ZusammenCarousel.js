@@ -55,7 +55,6 @@ export default class MyCarousel extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    console.log(this.state.windowSize);
     // Check if the newest prop value(renderGerman) = The previews prop value(prevProps)
     // if not set useGerman State with the new prop value.
 
@@ -90,7 +89,7 @@ export default class MyCarousel extends Component {
 
   render() {
     const mailTo = "mailto:";
-    console.log(this.state.windowSize);
+
     return (
       <div>
         <div className="travel-info">

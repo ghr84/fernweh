@@ -21,6 +21,7 @@ import Theorie from "./Components/Pages/Theorie/Theorie";
 import Imprint from "./Components/Pages/Imprint/Imprint";
 import Copyright from "./Components/Pages/Copyright/Copyright";
 import Privacy from "./Components/Pages/Privacy/Privacy";
+import ErrorPage from "./Components/Pages/ErrorPage/ErrorPage";
 
 // Button
 
@@ -81,6 +82,8 @@ function App() {
             <Route path="/imprint" component={Imprint} />
             <Route path="/copyright" component={Copyright} />
             <Route path="/privacy" component={Privacy} />
+            <Route component={ErrorPage} />
+            <ErrorPage />
           </Switch>
           <BackUpBtn
             setBackBtnClass={setBackBtnClass}

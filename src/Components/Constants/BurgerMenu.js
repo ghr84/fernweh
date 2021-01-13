@@ -1,14 +1,15 @@
 import React, { useContext, useEffect } from "react";
 import { NavHashLink as NavLink } from "react-router-hash-link";
+import { withRouter } from "react-router-dom";
 
 // Context
 
 import { ObserverContext } from "../Context/InterObserver";
 
-const BurgerMenu = ({ handleBurgerMenu, burgerVisibility }) => {
+const BurgerMenu = ({ handleBurgerMenu, burgerVisibility, history }) => {
   // Global state(s)
 
-  // Control rendering approiate styles to nav/burger when sections are in sight
+  // Control rendering appropriate styles to nav/burger when sections are in sight
 
   const { aboutUs } = useContext(ObserverContext);
   const [isAboutUsInView] = aboutUs;
@@ -49,6 +50,15 @@ const BurgerMenu = ({ handleBurgerMenu, burgerVisibility }) => {
 
   const handleGlobalLangState = () => {
     setRenderGerman(!renderGerman);
+  };
+
+  // Handle navigation to sub directories
+
+  const handleNavigation = (route) => {
+    history.push(route);
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    handleBurgerMenu();
   };
 
   return (
@@ -203,19 +213,10 @@ const BurgerMenu = ({ handleBurgerMenu, burgerVisibility }) => {
               </span>
             )}
           </NavLink>
-          <NavLink
-            exact
-            to="/media/#media-page-wrapper"
+          <span
             className="nav-links"
             aria-current="page"
-            scroll={(el) =>
-              el.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-                alignToTop: true,
-              })
-            }
-            onClick={() => handleBurgerMenu()}
+            onClick={() => handleNavigation("/media")}
           >
             {renderGerman ? (
               <span className={isMediaInView ? "burger-media-active" : null}>
@@ -223,15 +224,14 @@ const BurgerMenu = ({ handleBurgerMenu, burgerVisibility }) => {
               </span>
             ) : (
               <span className={isMediaInView ? "burger-media-active" : null}>
-                MÉDIAS
+                MÉDIA
               </span>
             )}
-            <span className="menu-item"></span>
-          </NavLink>
+          </span>
         </div>
       </div>
     </div>
   );
 };
 
-export default BurgerMenu;
+export default withRouter(BurgerMenu);

@@ -87,7 +87,7 @@ export default class MyCarousel extends Component {
 
   render() {
     const mailTo = "mailto:";
-    console.log(this.state.windowSize);
+
     return (
       <div>
         <div className="travel-info">

@@ -965,6 +965,48 @@
   }
 }
 
+// Error page
+
+#error-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 5rem 0 8rem 0;
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 1rem 0 1rem;
+    .error-img {
+      background-image: url("../../Assets/Images/404/404-2.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 0 0 3rem 0;
+      height: 15rem;
+      width: 100%;
+    }
+    .text-container {
+      max-width: 376px;
+      p:nth-child(2) {
+        font-family: "roboto-condensed-bold", "Arial Narrow", Helvetica,
+          sans-serif;
+        font-size: 1.2rem;
+      }
+      .error-page-btn {
+        background-color: #79cfdc;
+        @include mainBtnStyle;
+        width: 198px;
+        height: 40px;
+      }
+      a {
+        color: inherit;
+      }
+    }
+  }
+}
+
 // Footer
 
 footer {
